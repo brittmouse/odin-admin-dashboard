@@ -5,12 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="grid-container">
-        <div class="sidebar"></div>
-        <div class="header"></div>
+        <div class="sidebar">
+            <div class="title">
+                <!-- <img src="" alt="company logo"> -->
+                <p class="title">Dashboard</p>
+            </div>
+            <div class="user-actions">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </div>
+            <div class="user-settings">
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <ul id="header-top-row">
+                <li id="search-icon"></li>
+                <li><input type="text"></li>
+                <li id="notification-icon"></li>
+                <li id="profile-picture"></li>
+                <li id="profile-name">Brittany Stancoff</li>
+            </ul>
+            <ul id="header-bottom-row">
+                <li id="profile-picture"></li>
+                <li id="greeting">
+                    <p class="greet-small">Hi there,</p>
+                    <p class="greet-large">Brittany Stancoff (@bstancoff)</p>
+                </li>
+                <li><button class="blue-button" id="button1">New</button></li>
+                <li><button class="blue-button" id="button2">Upload</button></li>
+                <li><button class="blue-button" id="button3">Share</button></li>
+            </ul>
+        </div>
         <div class="main-content"></div>
     </div>
 </body>
