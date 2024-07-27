@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Admin Dashboard</title>
 </head>
+
 <body>
     <div class="grid-container">
+
         <div class="sidebar">
+
             <div class="title">
                 <!-- <img src="" alt="company logo"> -->
                 <p class="title">Dashboard</p>
             </div>
+
             <div class="user-actions">
                 <ul>
                     <li>Home</li>
@@ -26,6 +31,7 @@
                     <li>Communities</li>
                 </ul>
             </div>
+
             <div class="user-settings">
                 <ul>
                     <li>Settings</li>
@@ -34,26 +40,97 @@
                 </ul>
             </div>
         </div>
+
         <div class="header">
+
             <ul id="header-top-row">
                 <li id="search-icon"></li>
                 <li><input type="text"></li>
                 <li id="notification-icon"></li>
                 <li id="profile-picture"></li>
-                <li id="profile-name">Brittany Stancoff</li>
+                <li id="profile-name">Boring Name</li>
             </ul>
+
             <ul id="header-bottom-row">
                 <li id="profile-picture"></li>
                 <li id="greeting">
                     <p class="greet-small">Hi there,</p>
-                    <p class="greet-large">Brittany Stancoff (@bstancoff)</p>
+                    <p class="greet-large">Boring Name (@bname)</p>
                 </li>
                 <li><button class="blue-button" id="button1">New</button></li>
                 <li><button class="blue-button" id="button2">Upload</button></li>
                 <li><button class="blue-button" id="button3">Share</button></li>
             </ul>
+
         </div>
-        <div class="main-content"></div>
+
+        <div class="main-content">
+
+            <div class="project-container">
+                <h2>Your Projects</h2>
+                <div class="project-card" id="project1">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae officiis, temporibus et quis tempore incidunt nesciunt repudiandae, minus dolores veritatis? Molestiae eveniet repellendus aspernatur quam, quos eum alias accusantium.</p>
+                </div>
+                <div class="project-card" id="project2">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maiores. Aperiam ipsa optio iste alias aliquam suscipit nulla, assumenda distinctio doloribus recusandae libero ea? Distinctio ex qui nesciunt molestiae odit!</p>
+                </div>
+                <div class="project-card" id="project3">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maiores. Aperiam ipsa optio iste alias aliquam suscipit nulla, assumenda distinctio doloribus recusandae libero ea? Distinctio ex qui nesciunt molestiae odit!</p>
+                </div>
+                <div class="project-card" id="project4">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maiores. Aperiam ipsa optio iste alias aliquam suscipit nulla, assumenda distinctio doloribus recusandae libero ea? Distinctio ex qui nesciunt molestiae odit!</p>
+                </div>
+                <div class="project-card" id="project5">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maiores. Aperiam ipsa optio iste alias aliquam suscipit nulla, assumenda distinctio doloribus recusandae libero ea? Distinctio ex qui nesciunt molestiae odit!</p>
+                </div>
+                <div class="project-card" id="project6">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maiores. Aperiam ipsa optio iste alias aliquam suscipit nulla, assumenda distinctio doloribus recusandae libero ea? Distinctio ex qui nesciunt molestiae odit!</p>
+                </div>
+            </div>
+
+            <div class="announcement-container">
+                <h2>Announcements</h2>
+                <div class="basic-card" id="announcement-card">
+                    <h3>Site Maintainance</h3>
+                    <p class="announcement-text">Site will be down for maintainance between 23:00 Saturday 10 August and 04:00 Sunday 11 August 2024.</p>
+                    <hr>
+                    <h3>Community Share Day</h3>
+                    <p class="announcement-text">6 August 2024 is Community Share Day! Show off what cool projects you've been working on!</p>
+                    <hr>
+                    <h3>Updated Privacy Policy</h3>
+                    <p class="announcement-text">We've updated our Privacy Policy! Please review the updates here.</p>
+                </div>
+            </div>
+
+            <div class="trending-container">
+                <h2>Trending</h2>
+                <div class="basic-card" id="trending-card">
+                    <div class="trending-item" id="trending1">
+                        <p class="trending-text">@tegan</p>
+                        <p class="trending-text">World piece builder</p>
+                    </div>
+                    <div class="trending-item" id="trending2">
+                        <p class="trending-text">@morganlefay</p>
+                        <p class="trending-text">Magic Tree House</p>
+                    </div>
+                    <div class="trending-item" id="trending3">
+                        <p class="trending-text">@lebronjames</p>
+                        <p class="trending-text">Ballin'</p>
+                    </div>
+                    <div class="trending-item" id="trending4">
+                        <p class="trending-text">@alexis</p>
+                        <p class="trending-text">Rapid Transit Modernization</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
