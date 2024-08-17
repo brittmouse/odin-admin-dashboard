@@ -32,6 +32,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
+    color: var(--cat-latte-text);
 }
 
 .grid-container {
@@ -44,11 +45,16 @@ body {
 }
 
 .sidebar {
-    background-color: var(--cat-latte-sky);
+    background-color: var(--cat-latte-lavender);
     color: var(--cat-latte-base);
     grid-area: 1 / 1 / 3 / 2;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 700;
+}
+
+.icon {
+    height: 1.3em;
+    vertical-align: bottom;
 }
 
 .header {
@@ -71,15 +77,20 @@ body {
 #search-icon,
 #profile-picture,
 #notification-icon {
-    background-color: var(--cat-latte-yellow);
-    height: 27px;
-    width: 24px;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+#profile-picture-big {
+    height: 2em;
+    width: 2em;
 }
 
 #profile-name {
     font-size: 16px;
     text-align: right;
     padding-right: 1.5em;
+    font-weight: 700;
 }
 
 #header-bottom-row {
@@ -90,6 +101,7 @@ body {
 
 #greeting>p {
     margin: 0;
+    font-weight: 700;
 }
 
 input {
@@ -101,7 +113,7 @@ input {
 }
 
 .blue-button {
-    background-color: var(--cat-latte-sky);
+    background-color: var(--cat-latte-lavender);
     color: var(--cat-latte-base);
     font-size: 16px;
     font-weight: 700;
@@ -119,10 +131,6 @@ input {
     grid-template: repeat(2, 1fr) / 3fr 1fr;
     gap: 16px;
     padding: 16px;
-}
-
-.main-content>div {
-    border: 1px solid var(--cat-latte-green);
 }
 
 .project-container {
@@ -145,13 +153,17 @@ h2 {
     background-color: var(--cat-latte-base);
     padding: 8px;
     border-radius: 8px;
-    border-left: 0.5em solid var(--cat-latte-sapphire);
+    border-left: 0.5em solid var(--cat-latte-pink);
+}
+
+.announcement-container,
+.trending-container {
+    display: grid;
+    grid-template-rows: 2em 1fr;
 }
 
 .announcement-container {
     grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid-template-rows: 2em 1fr;
 }
 
 .basic-card {
@@ -168,6 +180,16 @@ h2 {
 
 .trending-container {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.trending-item {
+    padding: .5em;
+    display: grid;
+    grid-template: 1em 1em / 1.5em 1fr;
+}
+
+.trend-img {
+    grid-area: 1 / 1 / 3 / 2;
 }
 
 ul>li {
